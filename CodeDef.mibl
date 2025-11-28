@@ -16,6 +16,8 @@ setM(music number)
 setHealthOwn()
 setHealth()
 setXp()
+setPlayerSpeed()
+setPlayerSpeedCrouch()
 
 #execute#
 sfx()
@@ -43,7 +45,8 @@ sendToY()
 	#Checks if value is equal or greater than 0#
 	ifFalse{} 
 	#Checks if value is smaller than 0#
-
+	clone{} 
+	#actions, setup etc of a clone. Very difficult to implement. main goal is for animations.# TBA
 #comment (hi!) #
 
 +[a;b] -[a;b] *[a;b] /[a;b] abs[a] rounddown[a] , ; 
@@ -51,4 +54,8 @@ sendToY()
 killMap #ends map instance#
 killClones #clears screen#
 killAll #closes game#
-
+tick() #how fast the game should read instructions. be aware that the wait() function is incompatible.# TBA
+#main idea so far is every thing here is converted into a string when imported,
+then read at 120 letters per second, allowing for the wait() function to be
+useable while also having very slow tick speeds. However, it does require quite
+a bit of time that might be better spent learning js.#
