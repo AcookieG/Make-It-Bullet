@@ -1,0 +1,54 @@
+#fetch values#
+getX  
+getY
+x
+y
+t
+getXp
+getHealthOwn
+getHealth
+
+#set an outside event#
+setBkg(background)
+setBsk(boss skin)
+setPsk(player skin)
+setM(music number) 
+setHealthOwn()
+setHealth()
+setXp()
+
+#execute#
+sfx()
+wait(time)
+gotoX(pos;time) 
+gotoY(pos;time)
+sendToX()
+sendToY()
+
+#functions#
+	summon{} 
+	#summons a specific ID#
+	getVar{} 
+	#fetches a variable#
+	defRun{}
+	#runs a bound def by ID#
+	bindDef{} 
+	#binds a sequence to an ID, Compiler will read all code inside every time the ID is run#
+	bindVar{} 
+	#binds a variable to an ID#
+	bindSummon{} 
+	#creates a custom summon according to a string sequence. format is 
+	{ID; amount; arc in degrees; size of hitbox; number hitbox of edges; color%; sfx; vel; gravity strength; gravity direction; drag}#
+	ifTrue{} 
+	#Checks if value is equal or greater than 0#
+	ifFalse{} 
+	#Checks if value is smaller than 0#
+
+#comment (hi!) #
+
++[a;b] -[a;b] *[a;b] /[a;b] abs[a] rounddown[a] , ; 
+
+killMap #ends map instance#
+killClones #clears screen#
+killAll #closes game#
+
